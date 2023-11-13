@@ -1,0 +1,16 @@
+service: aws-node-project
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+package:
+  patterns:
+    - child.js
+
+functions:
+  function1:
+    handler: index.handler
+plugins:
